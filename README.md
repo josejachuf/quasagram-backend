@@ -38,10 +38,23 @@ Use the keys generated in the /models/posts.py file
 In a production environment notifications should be made using a task queue such as celery, for simplicity it is used directly when creating the post
 
 ## Install and run
+
+### Backend
 ```
 $ python3.8 -m venv venv
 
 $ source venv/bin/activate
 
 $ emmett -a backend develop
+```
+
+### Frontend
+A version of the app given in the course adapted to the backend is included
+
+```
+$ cd quasagram
+
+$ yarn install
+
+$ quasar dev -m pwa
 ```
