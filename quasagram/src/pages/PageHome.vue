@@ -306,7 +306,7 @@ export default {
       return outputArray
     },
     createPushSubscription (reg) {
-      const vapidPublicKey = 'BJF-lmpC9xBkSiKW3dHM8IZsnURMxbORkTbkceQfab_H7eIzOlotDA-T-sHshFfD-3QPhR0xiTFM9oCkScS0vAU'
+      const vapidPublicKey = 'XXXXXXXXX'
       const convertedVapidKey = this.urlBase64ToUint8Array(vapidPublicKey)
       reg.pushManager.subscribe({
         userVisibleOnly: true,
