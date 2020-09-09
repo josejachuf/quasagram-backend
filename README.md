@@ -31,7 +31,7 @@ $ openssl ec -in ./vapid_private.pem -outform DER|tail -c +8|head -c 32|base64|t
 $ openssl ec -in ./vapid_private.pem -pubout -outform DER|tail -c 65|base64|tr -d '=' |tr '/+' '_-' >> public_key.txt
 ```
 
-Use the keys generated in the /models/posts.py file
+Use the keys generated in the /models/posts.py file and quasagram/src/pages/PageHome.vue
 
 ## Notes
 
